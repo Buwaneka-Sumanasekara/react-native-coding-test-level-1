@@ -2,7 +2,7 @@ import Utils from '../../src/utils';
 
 describe('Utility function tests', () => {
   it('should return string formated date', () => {
-    expect(Utils.formatDate(new Date(2020, 2, 21))).toEqual('2020-2-21');
+    expect(Utils.formatDate(new Date(2020, 2, 21))).toEqual('2020-03-21');
   });
   it('should return true for letters', () => {
     expect(Utils.validateLetters('dsdsdds')).toEqual(true);
