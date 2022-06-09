@@ -17,8 +17,8 @@ function formatDate(date) {
 }
 
 function getPokemonIdFromURL(url) {
-  const last = url.split("/");
-  if (last[last.length - 1] !== "") {
+  const last = url.split('/');
+  if (last[last.length - 1] !== '') {
     return last[last.length - 1];
   } else {
     return last[last.length - 2];
