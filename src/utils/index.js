@@ -10,10 +10,10 @@ function validateLetters(str) {
 function formatDate(date) {
   const dateTimeObj = new Date(date);
   const year = dateTimeObj.getFullYear();
-  const month = dateTimeObj.getMonth();
+  const month = dateTimeObj.getMonth()+1;
   const day = dateTimeObj.getDate();
 
-  return `${year}-${month}-${day}`;
+  return `${year}-${(month>9?month:`0${month}`)}-${day}`;
 }
 
 function getPokemonIdFromURL(url) {

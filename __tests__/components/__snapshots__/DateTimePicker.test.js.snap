@@ -1,5 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`DateTimePicker: renders a native Component 1`] = `null`;
-
-exports[`DateTimePicker: should render correctly 1`] = `null`;
