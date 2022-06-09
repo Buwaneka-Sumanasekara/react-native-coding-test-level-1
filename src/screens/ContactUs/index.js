@@ -50,6 +50,7 @@ function MainScreen() {
       <DateTimePicker
         inputStyles={styles.inputStyle}
         maximumDate={new Date()}
+        value={txtDate}
         onChange={(event, date) => setDate(date)}
       />
 
