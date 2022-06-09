@@ -1,10 +1,10 @@
-import React, { useMemo, useState, useEffect, useCallback } from "react";
-import { View, StyleSheet } from "react-native";
-import { useSelector, useDispatch } from "react-redux";
+import React, { useMemo, useState, useEffect, useCallback } from 'react';
+import { View, StyleSheet } from 'react-native';
+import { useSelector, useDispatch } from 'react-redux';
 
-import PokemonInfo from "../../../components/PokemonInfo";
+import PokemonInfo from '../../../components/PokemonInfo';
 
-import * as ItemActions from "../../../redux/item/actions";
+import * as ItemActions from '../../../redux/item/actions';
 
 function CatalogScreen(props) {
   const { route } = props;
@@ -20,9 +20,7 @@ function CatalogScreen(props) {
     });
   }, [itemId]);
 
-  return (
-    <View style={styles.container}>{item && <PokemonInfo {...item} />}</View>
-  );
+  return <View style={styles.container}>{item && <PokemonInfo {...item} />}</View>;
 }
 
 const styles = StyleSheet.create({

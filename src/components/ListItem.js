@@ -1,15 +1,12 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { StyleSheet, TouchableOpacity, Text } from "react-native";
-import theme from "../theme";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { StyleSheet, TouchableOpacity, Text } from 'react-native';
+import theme from '../theme';
 
 function ListItem(props) {
   const { title, subTitle, onPress, containerStyle, ...otherProps } = props;
   return (
-    <TouchableOpacity
-      onPress={onPress}
-      style={[styles.containerStyle, containerStyle]}
-    >
+    <TouchableOpacity onPress={onPress} style={[styles.containerStyle, containerStyle]}>
       <Text style={styles.titleStyle}>{title}</Text>
       <Text style={styles.subTitleStyle}>{subTitle}</Text>
     </TouchableOpacity>
@@ -17,8 +14,8 @@ function ListItem(props) {
 }
 
 ListItem.defaultProps = {
-  title: "",
-  subTitle: "",
+  title: '',
+  subTitle: '',
   onPress: undefined,
 };
 
@@ -30,7 +27,7 @@ ListItem.propTypes = {
 
 const styles = StyleSheet.create({
   containerStyle: {
-    width: "100%",
+    width: '100%',
     padding: theme.padding.default,
   },
   titleStyle: {

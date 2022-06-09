@@ -1,6 +1,6 @@
-import * as ItemService from "../../services/itemService";
-import utils from "../../utils";
-import ActionTypes from "../ActionTypes";
+import * as ItemService from '../../services/itemService';
+import utils from '../../utils';
+import ActionTypes from '../ActionTypes';
 
 export function fetchItems(page = 0) {
   return async (dispatch, getState) => {
@@ -8,8 +8,8 @@ export function fetchItems(page = 0) {
     if (lastFetchedIndex < page) {
       const apiResponse = await ItemService.getPokemonList(page);
       if (apiResponse.status === 200) {
-        const arValues = apiResponse.data?.["results"] || [];
-        const hasNext = apiResponse.data?.["next"] !== null;
+        const arValues = apiResponse.data?.['results'] || [];
+        const hasNext = apiResponse.data?.['next'] !== null;
         dispatch({
           type: ActionTypes.SET_ITEMS,
           values: arValues,

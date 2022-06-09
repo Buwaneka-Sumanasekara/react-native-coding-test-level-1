@@ -1,22 +1,19 @@
-import React from "react";
-import { View, StyleSheet } from "react-native";
+import React from 'react';
+import { View, StyleSheet } from 'react-native';
 
-import { Button } from "../../components";
-import theme from "../../theme";
+import { Button } from '../../components';
+import theme from '../../theme';
 
 function MainScreen(props) {
   const { navigation } = props;
   return (
     <View style={styles.container}>
       <Button
-        title={"Contact Us"}
+        title={'Contact Us'}
         containerStyle={styles.buttonContainerStyle}
-        onPress={() => navigation.navigate("ContactScreen")}
+        onPress={() => navigation.navigate('ContactScreen')}
       />
-      <Button
-        title={"View Catalog"}
-        onPress={() => navigation.navigate("CatalogScreen")}
-      />
+      <Button title={'View Catalog'} onPress={() => navigation.navigate('CatalogScreen')} />
     </View>
   );
 }
@@ -25,7 +22,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: theme.padding.default,
-    justifyContent: "center",
+    justifyContent: 'center',
   },
   buttonContainerStyle: {
     marginBottom: theme.padding.default,

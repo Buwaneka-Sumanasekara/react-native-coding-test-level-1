@@ -1,8 +1,8 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { StyleSheet } from "react-native";
-import RNDateTimePicker from "@react-native-community/datetimepicker";
-import theme from "../theme";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { StyleSheet } from 'react-native';
+import RNDateTimePicker from '@react-native-community/datetimepicker';
+import theme from '../theme';
 
 function DateTimePicker(props) {
   const { value, inputStyles, ...otherProps } = props;
@@ -22,16 +22,12 @@ DateTimePicker.defaultProps = {
 
 DateTimePicker.propTypes = {
   value: PropTypes.any,
-  inputStyles: PropTypes.oneOfType([
-    PropTypes.number,
-    PropTypes.object,
-    PropTypes.array,
-  ]),
+  inputStyles: PropTypes.oneOfType([PropTypes.number, PropTypes.object, PropTypes.array]),
 };
 
 const styles = StyleSheet.create({
   inputStyles: {
-    width: "100%",
+    width: '100%',
     fontSize: theme.fontSizes.body,
     padding: theme.padding.default,
     borderRadius: theme.borderRadius.default,

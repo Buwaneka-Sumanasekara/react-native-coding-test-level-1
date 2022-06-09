@@ -1,13 +1,13 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { View, StyleSheet } from "react-native";
-import ListItem from "./ListItem";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { View, StyleSheet } from 'react-native';
+import ListItem from './ListItem';
 
 function PokemonInfo(props) {
   const { name, height, weight, base_experience, types, abilities } = props;
 
-  const Types = types.map((v) => v["type"]["name"]).join(", ");
-  const Abilities = abilities.map((v) => v["ability"]["name"]).join(", ");
+  const Types = types.map((v) => v['type']['name']).join(', ');
+  const Abilities = abilities.map((v) => v['ability']['name']).join(', ');
 
   return (
     <View style={styles.container}>
@@ -22,7 +22,7 @@ function PokemonInfo(props) {
 }
 
 PokemonInfo.defaultProps = {
-  name: "",
+  name: '',
   height: 0,
   weight: 0,
 };

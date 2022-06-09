@@ -1,8 +1,8 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { StyleSheet, TextInput } from "react-native";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { StyleSheet, TextInput } from 'react-native';
 
-import theme from "../theme";
+import theme from '../theme';
 
 function Input(props) {
   const { value, inputStyles, ...otherProps } = props;
@@ -23,7 +23,7 @@ Input.propTypes = {
 
 const styles = StyleSheet.create({
   inputStyle: {
-    width: "100%",
+    width: '100%',
     borderWidth: 1,
     paddingHorizontal: theme.padding.default,
     paddingVertical: theme.padding.default,

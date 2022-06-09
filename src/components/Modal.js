@@ -1,9 +1,9 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { Modal as RNModal, StyleSheet, View, FlatList } from "react-native";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Modal as RNModal, StyleSheet, View, FlatList } from 'react-native';
 
-import theme from "../theme";
-import Button from "./Button";
+import theme from '../theme';
+import Button from './Button';
 
 function Modal(props) {
   const { isVisible, setVisibleModal, data, renderItem, otherProps } = props;
@@ -23,9 +23,7 @@ function Modal(props) {
             data={data}
             extraData={data}
             renderItem={({ item }) => renderItem(item)}
-            ListFooterComponent={
-              <Button title={"Close"} onPress={() => setVisibleModal(false)} />
-            }
+            ListFooterComponent={<Button title={'Close'} onPress={() => setVisibleModal(false)} />}
           />
         </View>
       </View>
@@ -48,7 +46,7 @@ Modal.propTypes = {
 const styles = StyleSheet.create({
   modalWrapper: {
     flex: 1,
-    justifyContent: "center",
+    justifyContent: 'center',
     backgroundColor: theme.colors.transparentModal,
     padding: theme.padding.default,
   },

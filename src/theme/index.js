@@ -1,9 +1,9 @@
 const colors = {
-  primary: "#A100FF",
-  textColor: "white",
-  transparent: "transparent",
-  backgroundColor: "white",
-  transparentModal: "rgba(15, 32, 40, 0.5)",
+  primary: '#A100FF',
+  textColor: 'white',
+  transparent: 'transparent',
+  backgroundColor: 'white',
+  transparentModal: 'rgba(15, 32, 40, 0.5)',
 };
 
 const padding = {

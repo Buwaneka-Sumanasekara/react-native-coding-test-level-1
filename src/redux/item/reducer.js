@@ -1,4 +1,4 @@
-import ActionTypes from "../ActionTypes";
+import ActionTypes from '../ActionTypes';
 
 const defaultState = {
   items: [],

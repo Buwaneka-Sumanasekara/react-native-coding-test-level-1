@@ -1,11 +1,11 @@
-import React, { useCallback, useState, useEffect } from "react";
-import { View, StyleSheet, FlatList } from "react-native";
-import { useSelector, useDispatch } from "react-redux";
-import utils from "../../../utils";
+import React, { useCallback, useState, useEffect } from 'react';
+import { View, StyleSheet, FlatList } from 'react-native';
+import { useSelector, useDispatch } from 'react-redux';
+import utils from '../../../utils';
 
-import Card from "../../../components/Card";
+import Card from '../../../components/Card';
 
-import * as ItemActions from "../../../redux/item/actions";
+import * as ItemActions from '../../../redux/item/actions';
 
 function CatalogListScreen(props) {
   const { navigation } = props;
@@ -41,7 +41,7 @@ function CatalogListScreen(props) {
         renderItem={({ item }) => (
           <Card
             onPress={() => {
-              navigation.navigate("CatalogItemScreen", {
+              navigation.navigate('CatalogItemScreen', {
                 itemId: utils.getPokemonIdFromURL(item.url),
                 itemName: item.name,
               });
@@ -61,8 +61,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 10,
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });
 
